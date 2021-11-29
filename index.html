@@ -30,9 +30,14 @@
 
   <div id="todo-container">
 
-    <div class="todo">
+    <div id="todo1" class="todo">
       <p class="todo-name">Homework</p>
-      <button class="todo-del-btn" onclick="delTodo()"><i class="cross"><span></span><span></span></i></button>
+      <button class="todo-del-btn" onclick="delTodo(this.id)" id="todoDel-1">
+        <i class="cross">
+          <span></span>
+          <span></span>
+        </i>
+      </button>
     </div>
 
   </div>
