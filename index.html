@@ -6,13 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Contact</title>
+  <title>Todo List</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&display=swap" rel="stylesheet"> 
 
-  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="styles/style.css">
 
   <script src="https://kit.fontawesome.com/e029bbd6e0.js" crossorigin="anonymous"></script>
 
@@ -22,29 +22,34 @@
 <body>
 
   <div id="site-wrapper">
-    <h1 id="title"><a href="/pages/index.html">Contact</a></h1>
+    <h1 id="title"><a href="index.html">Todo List by Raphael Peuckert</a></h1>
 
-    <form action="https://formsubmit.co/raphael_peuckert@icloud.com" method="POST" id="email-form">
+    <div class="input-container">
+      <input type="text" id="todoIn" placeholder="Add Todo...">
+      <button type="submit" id="addButton" onclick="addTodo()">ADD TODO</button>
+    </div>
 
-      <input type="text" name="_honey" style="display:none">
+    <div id="todo-container">
 
-      <input type="hidden" name="_captcha" value="false">
-
-      <input class="form-input" id="name-input" type="text" name="name" placeholder="Your Name" required>
-      <input class="form-input" id="email-input" type="email" name="email" placeholder="Your Email Address" required>
-      <input class="form-input" id="text-input" type="textarea" name="email-content" placeholder="Your Message" required>
-      <button class="form-input" id="submit-btn" type="submit">Send</button>
-
-      <input type="hidden" name="_next" value="/pages/thanks.html">
-    </form> 
+      <div id="todo1" class="todo">
+        <p class="todo-name">Homework</p>
+        <button class="todo-del-btn" onclick="delTodo(this.id)" id="todoDel-1">
+          <i class="cross">
+            <span></span>
+            <span></span>
+          </i>
+        </button>
+      </div>
+    </div>
 
     <ul id="socials">
       <li class="social-btn"><a class="social-link" href="https://github.com/Rappeu" target="_blank"><i class="fab fa-github"></i></a></li>
       <li class="social-btn"><a class="social-link" href="https://twitter.com/rappeu_36" target="_blank"><i class="fab fa-twitter"></i></a></li>
       <li class="social-btn"><a class="social-link" href="" target="_blank"><i class="fas fa-globe"></i></a></li>
-      <li class="social-btn"><a class="social-link" href=""><i class="far fa-envelope"></i></a></li>
+      <li class="social-btn"><a class="social-link" href="contact.html"><i class="far fa-envelope"></i></a></li>
     </ul>
+
   </div>
-  <script src="/scripts/app.js"></script>
+  <script src="scripts/app.js"></script>
 </body>
 </html>
