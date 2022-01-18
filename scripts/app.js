@@ -73,6 +73,7 @@ document.getElementById("addButton").onclick = function addTodo() {
     todoContainer.appendChild(maxTodo);
   }
 
+
   console.log(incTodoCount);
 }
 
